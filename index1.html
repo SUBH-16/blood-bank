@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>User Data</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <table>
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Age</th>
+          <th>Gender</th>
+          <th>Blood Type</th>
+          <th>ID</th>
+        </tr>
+      </thead>
+      <tbody id="data-table"></tbody>
+    </table>
+
+    <script>
+      fetch("data.json")
+        .then((response) => response.json())
+        .then((data) => {
+          const tableBody = document.getElementById("data-table");
+
+          data.users.forEach((user) => {
+            const row = document.createElement("tr");
+
+            Object.values(user).forEach((value) => {
+              const cell = document.createElement("td");
+              cell.textContent = value;
+              row.appendChild(cell);
+            });
+
+            tableBody.appendChild(row);
+          });
+        })
+        .catch((error) => {
+          console.log("Error loading data:", error);
+        });
+    </script>
+  </body>
+</html>

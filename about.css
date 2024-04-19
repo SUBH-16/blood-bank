@@ -1,0 +1,86 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+nav {
+  background-color: #3498db;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 50px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+}
+
+#about_container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  justify-items: center;
+  padding: 20px;
+}
+
+#child1,
+#child2,
+#child3 {
+  border: 1px solid #dcdcdc;
+  padding: 20px;
+  text-align: center;
+  border-radius: 5px;
+}
+
+h4 {
+  color: #e74c3c;
+}
+
+p {
+  margin-top: 10px;
+  line-height: 1.6;
+}
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+}
+
+footer p {
+  margin: 0;
+}
+nav a:hover {
+  color: #3498db;
+}
+#child1,
+#child2,
+#child3 {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease;
+}
+#child1:hover,
+#child2:hover,
+#child3:hover {
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+.social-icons {
+  margin-bottom: 20px;
+}
+
+.social-icon {
+  display: inline-block;
+  margin: 0 10px;
+  transform: translateY(0);
+  transition: transform 0.3s ease;
+}
+
+.social-icon img {
+  width: 30px;
+  height: 30px;
+}
+.social-icon:hover {
+  transform: translateY(-5px);
+}

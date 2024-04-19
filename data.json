@@ -1,0 +1,43 @@
+{
+  "users": [
+    {
+      "name": "Dhanada",
+      "password": "Dhanada@123",
+      "id": 1
+    }
+  ],
+  "donors": [
+    {
+      "name": "Ram",
+      "password": "Ram@123",
+      "blood": "A+ve",
+      "gender": "male",
+      "age": "32",
+      "id": 1
+    },
+    {
+      "name": "Richa",
+      "password": "Richa@123",
+      "blood": "O-ve",
+      "gender": "female",
+      "age": "23",
+      "id": 9
+    },
+    {
+      "name": "Sara",
+      "password": "Sara@123",
+      "blood": "B-ve",
+      "gender": "female",
+      "age": "21",
+      "id": 16
+    },
+    {
+      "name": "Rama",
+      "password": "Rama@123",
+      "blood": "B-ve",
+      "gender": "male",
+      "age": "35",
+      "id": 17
+    }
+  ]
+}

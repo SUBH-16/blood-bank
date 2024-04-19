@@ -1,0 +1,85 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+nav {
+  display: flex;
+  justify-content: space-evenly;
+  border: 2px solid grey;
+  background-color: coral;
+  height: 50px;
+}
+
+nav a {
+  color: black;
+  text-decoration: none;
+}
+
+nav a:hover {
+  text-decoration: underline;
+  color: blue;
+}
+
+#asignin_parent_div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: calc(100vh - 50px);
+  background-color: #f0f0f0;
+}
+
+#asignin_image img {
+  max-width: 100%;
+  height: 100%; /* Set the image height to 100% */
+  object-fit: cover;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+#signin_div {
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  width: 300px;
+  text-align: center;
+  height: 100%; /* Set the form height to 100% */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#signin {
+  background-color: forestgreen;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+#signin:hover {
+  background-color: darkgreen;
+}
+
+#signin_div h1 {
+  color: blueviolet;
+  margin-bottom: 20px;
+}
+
+#signin_div input {
+  width: 100%;
+  padding: 10px;
+  margin: 8px 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+#signin_div input:focus {
+  outline: none;
+  border-color: dodgerblue;
+  box-shadow: 0 0 5px dodgerblue;
+}
